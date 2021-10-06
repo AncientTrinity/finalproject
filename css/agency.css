@@ -172,8 +172,8 @@ img::-moz-selection {
 
 header.masthead {
   text-align: center;
-  color: rgb(255, 255, 255);
-  background-image: url("../videos/background.png");
+  color: rgb(0, 0, 0);
+  background-image: url("../videos/university-of-belize.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -374,7 +374,7 @@ header.masthead .intro-text .intro-heading {
   height: 75px;
   /* IE 9 */
   transform: rotate(90deg);
-  background-color: #0080ff;
+  background-color: #c5c347;
 }
 
 .timeline {
