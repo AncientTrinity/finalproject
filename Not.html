@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
   
-    <title>All Gates</title>
+    <title>Not Gate</title>
   
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -148,7 +148,7 @@
                 
                   
 
-                  <p>This is a simple animation of a gate as you can see the top Off can simulate the AND GATE Totally off while the Top ON cand Simulate the AND GATE Turning on Completely. While the Bottom OFF can simulate 1 going into the AND and still making it be Then the bottom on can simulate the bottom feeding the it a 1 but still being off  </p>
+                  <p>This is a simple animation of a gate as you can see the top Off can simulate the OR GATE </p>
                   <ul class="list-inline">
                     <li>Date: October 2021</li>
                     <li>Client: Mr.K Ryan </li>
@@ -185,31 +185,5 @@
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
   
-
-  
-    <script>
-      var myVar;
-      
-      function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-      }
-      
-      function showPage() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-      
-      
-        // When the user scrolls the page, execute myFunction 
-        window.onscroll = function() {myFunction()};
-              
-              function myFunction() {
-              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-              var scrolled = (winScroll / height) * 100;
-              document.getElementById("myBar").style.width = scrolled + "%";
-              }
-      }
-      </script>
-
 </body>
 </html>

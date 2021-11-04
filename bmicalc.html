@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
   
-    <title>Xor Gate</title>
+    <title>BMI Calculator</title>
   
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -74,10 +74,10 @@
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid"  src="videos/Main_modal_pics/Xor-gate-en.svg.png"alt="">
+              <img class="img-fluid"  src="videos/Main_modal_pics/bmi.jpg"alt="">
             </a>
             <div class="portfolio-caption">
-              <h4>NOT</h4>
+              <h4>Flip Flop </h4>
               <p class="text-muted">Gates</p>
             </div>
           
@@ -139,25 +139,27 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">OR GATE</h2>
-                  <p class="item-intro text-muted">This is a simple animation of an AND gate.</p>
-                  <button class="btn btn-primary" onclick="document.getElementById('myImage').src='videos/Xor/XORoff.png'">Off</button>
-                  <button class="btn btn-primary" onclick="document.getElementById('myImage').src='videos/Xor/XORon.png'">On</button>
-                  <p></p>
-                  <img id="myImage" src="videos/Xor/XORon.png" style="width:350px">
+                  <h2 class="text-uppercase">BMI Calculator</h2>
+                  <p class="item-intro text-muted">This is an interactive BMI Calculator.</p>
                   
-                  <P></p>
-                  
-                  <button class="btn btn-primary" onclick="document.getElementById('myImage').src='videos/Xor/XORoffon.png'">Off</button>
-                  <button class="btn btn-primary" onclick="document.getElementById('myImage').src='videos/Xor/XORonoff.png'">On</button>
+                    <div>
+                        <p id="info">Please enter height [cm] and weight [kg]</p>
+                        <p class="item-intro text-muted" class="text">Height</p>
+                        <input type="text" id="h">
+                        <p class="item-intro text-muted"  class="text">Weight</p>
+                        <input type="text" id="w">
+                        <p class="item-intro text-muted" id="result"></p>
+                        <button id="btn" class="btn btn-primary"  onClick="BMI()">Calculate</button>
+                        
+                    </div>
                 
                   
 
-                  <p> This is a example of a Xor gate  </p>
+                  <p>This is an interactive example of a BMI Calculator </p>
                   <ul class="list-inline">
                     <li>Date: October 2021</li>
                     <li>Client: Mr.K Ryan </li>
-                    <li>Category: Gates</li>
+                    <li>Category: BMI Calculator</li>
                   </ul>
                 <button class="btn btn-primary" type="button"><a href="index2.html">
                   <i class="fas fa-link"></i>
@@ -192,7 +194,16 @@
   
 
   
-  
+    <script type="text/javascript">
+		function BMI() {
+			var h=document.getElementById('h').value;
+			var w=document.getElementById('w').value;
+			var bmi=w/(h/100*h/100);
+			var bmio=(bmi.toFixed(2));
+
+			document.getElementById("result").innerHTML="Your BMI is " + bmio;
+		}
+	</script>
 
 </body>
 </html>
